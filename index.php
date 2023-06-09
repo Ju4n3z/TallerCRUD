@@ -182,7 +182,7 @@
             </div>
             <div class="row justify-content-center mt-2">
                 <div class="col-4">
-                    <input type="time" placeholder="Horario de entrada" name="hora">
+                    <input type="text" placeholder="Horario de entrada" name="hora" value="<?php echo $GLOBALS["dataCookie"]['hora'] ?>">
                 </div>
                 <div class="col-2">
                     <input type="submit" value="✅" name="enviar">
