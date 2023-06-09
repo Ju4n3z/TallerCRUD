@@ -2,6 +2,8 @@
 
 Esta es una aplicación de para poder enviar datos y poder tanto eliminar, o editar los datos utilizando PHP y conectandose a la base de datos a través de MockAPI.
 
+Link de MockAPI donde se pueden visualizar los datos: https://6480e3fff061e6ec4d4a019d.mockapi.io/Informacion
+
 #### ¿Cómo funciona?
 
 1. Para enviar información llenar todos los campos correspondientes y se oprime el botón "✅", esto enviará los datos y posteriormente aparecerá la información en la tabla.
