@@ -36,9 +36,9 @@
                 break;
             }
         }
-        $credencialesD["http"]["method"] = "DELETE";
-        $credencialesD["http"]["header"] = "Content-type: application/json";
-        $config = stream_context_create($credencialesD);
+        $credenciales["http"]["method"] = "DELETE";
+        $credenciales["http"]["header"] = "Content-type: application/json";
+        $config = stream_context_create($credenciales);
         $url = "https://6480e3fff061e6ec4d4a019d.mockapi.io/Informacion/$id";
         $resultado = file_get_contents($url, false, $config);
     }
@@ -54,9 +54,9 @@
                 break;
             }
         }
-        $credencialesG["http"]["method"] = "GET";
-        $credencialesG["http"]["header"] = "Content-type: application/json";
-        $config = stream_context_create($credencialesG);
+        $credenciales["http"]["method"] = "GET";
+        $credenciales["http"]["header"] = "Content-type: application/json";
+        $config = stream_context_create($credenciales);
         $url = "https://6480e3fff061e6ec4d4a019d.mockapi.io/Informacion/$id";
         $resultado = file_get_contents($url, false, $config);
         $data = json_decode($resultado, true);
@@ -125,7 +125,6 @@
         exit();
     } elseif (isset($_POST['buscar'])) {
         buscarDatos($_POST['cedula']);
-        session_unset();
         header("Location: index.php");
         exit();
     }
